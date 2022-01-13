@@ -1,9 +1,15 @@
 #!name=Unlock VIP
 #!desc=自用
 [MITM]
-hostname = %APPEND% gw.aoscdn.com, notability.com, www.fengread.com, ap*.intsig.net, api.picsart.c*, api.meiease.c*, api-kinemaster-assetstore.*, xianbeikeji.com, zebra.maka.im, mid.zineapi.com, vstou.faxingwu.com, diary.7english.cn:2433, license.pdfexpert.com, claritywallpaper.com, vni.kwaiying.com, api.ankiapp.com, license.enpass.io, subscription.grammarly.com, api.xiuxiu.meitu.com, *.caixin.com, *.xmind.*, account.wps.cn, ws.60he.com, api.busuu.com, api.meiease.c*, api.memrise.com, api.meiease.c*, api.yonekura.cn, app.flashdown365.com, vira.llsapp.com, www.mindmeister.com, 115.28.168.103, api.flexibits.com, biz.caiyunapp.com, api.sololearn.com, api.revenuecat.com, api.getmimo.com, api.calm.com, www.calm.com, lcs-mobile-cops.adobe.io, photos.adobe.io, backend.getdrafts.com, apic.musixmatch.com, api.textnow.me, tagit.hyhuo.com, buy.itunes.apple.com, api.psy-1.com, api.qbb6.com, snailsleep.net, music.snailsleep.net, community.snailsleep.net, nmeditation.snailsleep.net, license.pdfexpert.com, pdfexpert.com, mubu.com, app.58.com, 58.com, 58cdn.com, w.cloudfront.net, d1025gvspu57dc.cloudfront.net, maimai.cn, open.taou.com, greasyfork.org, license.pdfexpert.com, gateway-api.*.com, api.dushu365.com, baimiao.uzero.cn, avoscloud.com, cm.szsszykj.com, outcut.szsszykj.com
+hostname = %APPEND% gw.aoscdn.com, notability.com, www.fengread.com, ap*.intsig.net, api.picsart.c*, api.meiease.c*, api-kinemaster-assetstore.*, xianbeikeji.com, zebra.maka.im, mid.zineapi.com, vstou.faxingwu.com, diary.7english.cn:2433, license.pdfexpert.com, claritywallpaper.com, vni.kwaiying.com, api.ankiapp.com, license.enpass.io, subscription.grammarly.com, api.xiuxiu.meitu.com, *.caixin.com, *.xmind.*, account.wps.cn, ws.60he.com, api.busuu.com, api.meiease.c*, api.memrise.com, api.meiease.c*, api.yonekura.cn, app.flashdown365.com, vira.llsapp.com, www.mindmeister.com, 115.28.168.103, api.flexibits.com, biz.caiyunapp.com, api.sololearn.com, api.revenuecat.com, api.getmimo.com, api.calm.com, www.calm.com, lcs-mobile-cops.adobe.io, photos.adobe.io, backend.getdrafts.com, apic.musixmatch.com, api.textnow.me, tagit.hyhuo.com, buy.itunes.apple.com, api.psy-1.com, api.qbb6.com, snailsleep.net, music.snailsleep.net, community.snailsleep.net, nmeditation.snailsleep.net, license.pdfexpert.com, pdfexpert.com, mubu.com, app.58.com, 58.com, 58cdn.com, w.cloudfront.net, d1025gvspu57dc.cloudfront.net, maimai.cn, open.taou.com, greasyfork.org, license.pdfexpert.com, gateway-api.*.com, api.dushu365.com, baimiao.uzero.cn, avoscloud.com, cm.szsszykj.com, outcut.szsszykj.com, aiqicha.baidu.com, api.vuevideo.net, app.api.versa-ai.com
 
 [Script]
+万能脚本 = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/verify_receipt.js
+
+马卡龙 = type=http-response,pattern=https://app.api.versa-ai.com/pay/order/iap/check,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/hank-yuan/IOS-rules/master/UserScripts/mkl.js
+
+VUE pro = type=http-response,pattern=^https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js
+
 知音漫客 = type=http-response,pattern=^https://getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account|getuserinfo_ticket|getcomicinfo)/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js
 
 趣制作1 = type=http-response,pattern=https://cm.szsszykj.com/interface/GetVip.php,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/qzz.js
@@ -102,8 +108,7 @@ Charger Master = type=http-response,pattern=https://api.yonekura.cn/3.6.8/uicomm
 
 MeisterTask = type=http-response,pattern=https://www.mindmeister.com/api/v2/licenses/meistertask,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/meistertask.js
 
-#一言（20200916）Attention:登录使用
-http-response http://115.28.168.103:8080/yiyan/* script-path=  https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/yiyan.js, requires-body=true
+一言 = type=http-response,pattern=http://115.28.168.103:8080/yiyan/*,,requires-body=1,max-size=0,script-path=  https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/yiyan.js
 
 Fantastical = type=http-response,pattern=^https:\/\/api\.flexibits\.com\/(v1\/auth\/device|v1\/account\/details),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/fantastical.js
 
@@ -112,8 +117,10 @@ Fantastical = type=http-response,pattern=^https:\/\/api\.flexibits\.com\/(v1\/au
 Sololearn = type=http-response,pattern=^https:\/\/api\.sololearn\.com\/(authenticateDevice|challenge\/GetContestFeed|Profile\/GetProfile)$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/sololearn.js
 
 Vsco = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/\d+$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Redeembynight/own/main/QuantumultX/script/unlock/vsco.js
+
 Pillow = type=http-response,pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/pillow.js
-noto笔记&Airmail Pro(by Eric) = type=http-response,pattern=https:\/\/api\.revenuecat\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Redeembynight/own/main/QuantumultX/script/unlock/revenuecat.js,script-update-interval=-1
+
+noto笔记&Airmail Pro = type=http-response,pattern=https:\/\/api\.revenuecat\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Redeembynight/own/main/QuantumultX/script/unlock/revenuecat.js,script-update-interval=-1
 
 Mimo = type=http-response,pattern=^https:\/\/api\.getmimo\.com\/v1\/subscriptions$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/mimo.js
 

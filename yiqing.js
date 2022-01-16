@@ -1,4 +1,4 @@
-var list = ["中国","广东","中山"];
+var list = ["中国","广东","中山","佛山"];
 const url = "https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5";
 var ala="";
 function nowtime(){
@@ -28,10 +28,12 @@ $httpClient.get(url, function(error, response, data){
     if (i == list.length - 1) {
      $done({
        title: "疫情查询:新增|现存"+ "   "+nowtime(),
-       icon:"facemask.fill",
-       "icon-color":"#FF0000",
+       icon:"filemenu.and.cursorarrow",
+       "icon-color":"#5AC8FA",
        content: ala.replace(/\n$/, "")
      });
     }
+  }
+});
   }
 });

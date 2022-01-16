@@ -1,17 +1,7 @@
-#!name=比价
+#!name=去水印&防跳转
 #!desc=自用
 
 [Script]
-#空气质量
-http-response ^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather.*(?!dataSets=forecastNextHour)(include=.*air_quality.*|dataSets=.*airQuality.*).*(country=[A-Z]{2})?.* script-path=https://raw.githubusercontent.com/ventusyu/ventus/main/Script/Apple_Weather.js, requires-body=true, tag=Apple_Weather
-
-#京东、淘宝比价
-# > 京东App 历史价格
-京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/ventusyu/ventus/main/Script/jd_tb_price.js
-# > 淘宝App 历史价格
-淘宝比价 = type=http-request,requires-body=1,pattern=^http://.+/amdc/mobileDispatch,script-path=https://raw.githubusercontent.com/ventusyu/ventus/main/Script/jd_tb_price.js
-淘宝比价 = type=http-response,requires-body=1,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=https://raw.githubusercontent.com/ventusyu/ventus/main/Script/jd_tb_price.js
-
 #皮皮虾去水印去广告
 http-response ^https?://.*\.snssdk\.com/bds/(feed/stream|comment/cell_reply|cell/cell_comment|cell/detail|ward/list|user/favorite|user/cell_coment|user/cell_userfeed|user/publish_list) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/ventusyu/ventus/main/Script/PPX.js
 
@@ -25,4 +15,4 @@ TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v
 百度防跳转 = type=http-response,pattern=^https:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/ventusyu/ventus/main/Script/baidu-no-redirect.js
 
 [MITM]
-hostname = %APPEND% weather-data.apple.com, weather-map.apple.com, tiles.waqi.info, mp.weixin.qq.com, api.m.jd.com, trade-acs.m.taobao.com, *.snssdk.com, vni.kwaiying.com, *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, testflight.apple.com, boxer.baidu.com
+hostname = %APPEND% *.snssdk.com, vni.kwaiying.com, *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, testflight.apple.com, boxer.baidu.com

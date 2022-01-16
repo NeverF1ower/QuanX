@@ -1,3 +1,4 @@
+
 var list = ["西安","河南","天津","汉中"];
 const url = "https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5";
 var ala="";

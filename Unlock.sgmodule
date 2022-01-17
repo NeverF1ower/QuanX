@@ -134,8 +134,7 @@ Xmind（恢复订阅）= type=http-response,pattern=https?:\/\/.*\.xmind\..*\/_r
 
 Wps（国区）= type=http-response,pattern=^https://account.wps.*/api/users/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
-#Python Ai解锁会员 (ios黑科技)
-http-response ^http:\/\/ws\.60he\.com\/(book|user).+ script-path=  https://raw.githubusercontent.com/Redeembynight/own/main/QuantumultX/script/unlock/PythonAI.js, requires-body=true
+#Python Ai解锁会员 (ios黑科技)= type=http-response,pattern=http-response ^http:\/\/ws\.60he\.com\/(book|user).+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Redeembynight/own/main/QuantumultX/script/unlock/PythonAI.js
 
 Busuu= type=http-response,pattern=^https:\/\/api\.busuu\.com\/users\/me*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/busuu.js
 

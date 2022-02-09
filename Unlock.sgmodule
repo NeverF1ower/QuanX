@@ -1,10 +1,41 @@
 #!name=Unlock VIP
 #!desc=自用
 [MITM]
-hostname = %APPEND% gw.aoscdn.com, notability.com, www.fengread.com, ap*.intsig.net, api.picsart.c*, api.meiease.c*, api-kinemaster-assetstore.*, xianbeikeji.com, zebra.maka.im, mid.zineapi.com, vstou.faxingwu.com, diary.7english.cn:2433, license.pdfexpert.com, claritywallpaper.com, vni.kwaiying.com, api.ankiapp.com, license.enpass.io, subscription.grammarly.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, *.caixin.com, *.xmind.*, account.wps.cn, ws.60he.com, api.busuu.com, api.meiease.c*, api.memrise.com, api.meiease.c*, api.yonekura.cn, app.flashdown365.com, vira.llsapp.com, www.mindmeister.com, 115.28.168.103, api.flexibits.com, biz.caiyunapp.com, api.sololearn.com, api.getmimo.com, api.calm.com, www.calm.com, lcs-mobile-cops.adobe.io, photos.adobe.io, backend.getdrafts.com, apic.musixmatch.com, api.textnow.me, tagit.hyhuo.com, buy.itunes.apple.com, api.psy-1.com, api.qbb6.com, snailsleep.net, music.snailsleep.net, community.snailsleep.net, nmeditation.snailsleep.net, license.pdfexpert.com, pdfexpert.com, mubu.com, app.58.com, 58.com, 58cdn.com, w.cloudfront.net, d1025gvspu57dc.cloudfront.net, maimai.cn, open.taou.com, greasyfork.org, license.pdfexpert.com, gateway-api.*.com, api.dushu365.com, baimiao.uzero.cn, avoscloud.com, cm.szsszykj.com, outcut.szsszykj.com, aiqicha.baidu.com, api.vuevideo.net, app.api.versa-ai.com, api.shayujizhang.com, *.*apps.com, fmapp.chinafamilymart.com.cn, app.bilibili.com, wmapi.meituan.com, api.m.jd.com, tieba.baidu.com, afd.baidu.com, mbd.baidu.com, api.account.meitu.com, api.meiyan.com, iosv2.cjapi.papa21.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, ios-h2.prod.ftl.netflix.com, user*.zymk.cn, p.du.163.com, weixin110.qq.com, mp.weixin.qq.com, ticktick.com, api.gotokeep.com, api.keepkeep.com, lchttpapi.xczim.com, api.infzm.com, i.weread.qq.com
+hostname = %APPEND% gw.aoscdn.com, notability.com, www.fengread.com, ap*.intsig.net, api.picsart.c*, api.meiease.c*, api-kinemaster-assetstore.*, xianbeikeji.com, zebra.maka.im, mid.zineapi.com, vstou.faxingwu.com, diary.7english.cn:2433, license.pdfexpert.com, claritywallpaper.com, vni.kwaiying.com, api.ankiapp.com, license.enpass.io, subscription.grammarly.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, *.caixin.com, *.xmind.*, account.wps.cn, ws.60he.com, api.busuu.com, api.memrise.com, api.yonekura.cn, app.flashdown365.com, vira.llsapp.com, www.mindmeister.com, 115.28.168.103, api.flexibits.com, biz.caiyunapp.com, api.sololearn.com, api.getmimo.com, api.calm.com, www.calm.com, lcs-mobile-cops.adobe.io, photos.adobe.io, backend.getdrafts.com, apic.musixmatch.com, api.textnow.me, tagit.hyhuo.com, buy.itunes.apple.com, api.psy-1.com, api.qbb6.com, snailsleep.net, music.snailsleep.net, community.snailsleep.net, nmeditation.snailsleep.net, license.pdfexpert.com, pdfexpert.com, mubu.com, app.58.com, 58.com, 58cdn.com, w.cloudfront.net, d1025gvspu57dc.cloudfront.net, maimai.cn, open.taou.com, greasyfork.org, license.pdfexpert.com, gateway-api.*.com, api.dushu365.com, baimiao.uzero.cn, avoscloud.com, cm.szsszykj.com, outcut.szsszykj.com, aiqicha.baidu.com, api.vuevideo.net, app.api.versa-ai.com, api.shayujizhang.com, *.*apps.com, fmapp.chinafamilymart.com.cn, app.bilibili.com, wmapi.meituan.com, api.m.jd.com, tieba.baidu.com, afd.baidu.com, mbd.baidu.com, api.account.meitu.com, api.meiyan.com, iosv2.cjapi.papa21.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, ios-h2.prod.ftl.netflix.com, user*.zymk.cn, p.du.163.com, weixin110.qq.com, mp.weixin.qq.com, ticktick.com, api.gotokeep.com, api.keepkeep.com, lchttpapi.xczim.com, api.infzm.com, qianji.xxoojoke.com, bmall.camera360.com, user-kaji-api.b612kaji.com, server.yoyiapp.com, cutisanapi.imuuzi.com, apiios_dq.xiangha.com, appweb_dq.xiangha.com, apiios.xiangha.com, api.feidee.net, userapi.feidee.net, tg.feidee.com, community.feidee.com, *.feidee.net,api.ruguoapp.com, *.wtzw.com, zy6kcqa01a.execute-api.us-east-2.amazonaws.com, api.shouzhang.com, poster.meipian.cn, www.helloshiyu.com
 
 [Script]
-微信读书 = type=http-response,pattern=^https?:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/LiuLiShuo-YueDu.js
+七猫小说 = type=http-response,pattern=^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js
+
+hyperweb = type=http-response,pattern=^https://zy6kcqa01a.execute-api.us-east-2.amazonaws.com/prod/verifyReceipt,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/hyperweb.js
+
+Picsart = type=http-response,pattern=^https?:\/\/api\.meiease\.cn\/shop\/subscription\/validate,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Picsart.js
+
+时光手账 = type=http-response,pattern=^https:\//api.shouzhang.com\/memcenterlk\/member\/firstpage.do,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/shouzhang.js
+
+美篇 = type=http-response,pattern=^https:\//poster.meipian.cn\/5.3\/user\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/meipian.js
+
+睡眠助手 = type=http-response,pattern=https://www.helloshiyu.com/sleep/user/profile,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/smzs.js
+
+即刻 = type=http-response,pattern=^https:\//api.ruguoapp.com\/1.0\/users\/profile,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/jike.js
+
+随手记vip1 = type=http-response,pattern=^https?:\/\/((user)?api|community)\.feidee\.(net|com)\/(v\d\/(pay/vip|profile/basic_info|app_themes/types)|transfer\/gapi\/accurat\/v\d\/tasks),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/SuiShouJi.js
+随手记vip2 = type=http-response,pattern=^https?:\/\/api\.feidee\.net\/v\d\/app_themes\/\d+\/download,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/SuiShouJi.js
+
+菜谱大全1 = type=http-response,pattern=^https?:\/\/apiios_dq\.xiangha\.com\/v\d\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
+菜谱大全2 = type=http-response,pattern=^https?:\/\/appweb_dq\.xiangha\.com\/center\/pay\/home,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
+香哈菜谱 = type=http-response,pattern=^https?:\/\/apiios\.xiangha\.com\/main\d+\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/XiangHaCaiPu.js
+
+B612咔叽 = type=http-response,pattern=https://user-kaji-api.b612kaji.com/v1/purchase/subscription/subscriber/status,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/612.js
+
+fimo = type=http-response,pattern=^https://server.yoyiapp.com/fimo-user/user$,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/fimo.js
+
+Cutisan = type=http-response,pattern=https://cutisanapi.imuuzi.com/api/Home/index,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/cutisan.js
+
+钱迹 = type=http-response,pattern=https?://qianji.xxoojoke.com/(vip/configios|budget/submit),requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/qj.js
+
+Mix = type=http-response,pattern=^https:\/\/bmall\.camera360\.com\/api\/(iap\/check-receipt$|mix\/getinfo$),requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/mix.js
+
+varlens = type=http-response,pattern=^https?:\/\/mid\.zineapi\.com\/@varlens\/api\/user\/info\/,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/varlens.js
 
 流利说阅读 =  type=http-response,pattern=^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/LiuLiShuo-YueDu.js
 
@@ -42,8 +73,6 @@ BiliBili_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern
 Gear Pro = type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/O7Y0/Profiles/master/QuantumultX/Rewrite/Gear.js
 
 鲨鱼记账 = type=http-response,pattern=https://api.shayujizhang.com/account/detail/info/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/syjz.js
-
-万能脚本 = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/verify_receipt.js
 
 马卡龙 = type=http-response,pattern=https://app.api.versa-ai.com/pay/order/iap/check,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/hank-yuan/IOS-rules/master/UserScripts/mkl.js
 
@@ -107,8 +136,6 @@ Kinemaster = type=http-response,pattern=^https:\/\/api-kinemaster-assetstore\.(n
 小习惯 = type=http-response,pattern=https://xianbeikeji.com/daily/app/user/query,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/mzjz.js
 
 斑马海报 = type=http-response,pattern=https://zebra.maka.im/api/user/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/bmhb.js
-
-Varlens = type=http-response,pattern=^https:\/\/mid\.zineapi\.com\/@varlens\/api\/user\/info\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Redeembynight/own/main/QuantumultX/script/unlock/Varlens.js
 
 卡通相机 = type=http-response,pattern=http://vstou.faxingwu.com/huihua/user/getUser,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/ktxj.js
 
